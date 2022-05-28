@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 테두리까지 영역 지정*/
+}
+
+#container {
+  margin: 0 auto; /*화면 중앙*/
+  width: 1200px;
+}
+
+/*header*/
+header {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+}
+
+/*logo*/
+#logo {
+  float: left;
+  width: 250px;
+  height: 100px;
+  background-color: indigo;
+}
+
+/*nav*/
+nav {
+  float: right;
+  width: 900px;
+  height: 100px;
+  background-color: green;
+}
+
+/*slideShow*/
+#slideShow {
+  clear: both;
+  width: 100%;
+  height: 300px;
+  background-color: orange;
+  overflow: hidden; /*영역 넘치면 감춤*/
+}
+
+/*contents*/
+#contents {
+  width: 100%;
+  height: 300px;
+}
+
+/*tabMenu*/
+#tabMenu {
+  float: left;
+  width: 600px;
+  height: 100%;
+  background-color: violet;
+}
+
+/*links*/
+#links {
+  float: right;
+  width: 600px;
+  height: 100%;
+  background-color: skyblue;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: gray;
+}

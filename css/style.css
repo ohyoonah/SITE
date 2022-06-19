@@ -122,7 +122,6 @@ nav {
 
 /*slideShow*/
 #slideShow {
-  clear: both;
   width: 100%;
   height: 300px;
   position: relative;
@@ -174,14 +173,14 @@ button:focus {
 /*contents*/
 #contents {
   width: 100%;
-  height: 300px;
+  height: 100%;
   margin-top: 20px;
+  display: flex;
 }
 
 /*tabMenu*/
 #tabMenu {
-  float: left;
-  width: 600px;
+  width: 50%;
   height: 100%;
   margin-top: 10px;
 }
@@ -241,8 +240,7 @@ button:focus {
 
 /*links*/
 #links {
-  float: right;
-  width: 600px;
+  width: 50%;
   height: 100%;
   margin-top: 20px;
 }
@@ -250,10 +248,10 @@ button:focus {
 #links ul {
   padding: 0;
   overflow: hidden;
+  display: flex;
 }
 
 #links ul li {
-  float: left;
   width: 33%;
   text-align: center;
   margin: 10px 0;
@@ -351,5 +349,24 @@ p {
 
   #navMenu {
     display: block;
-  };
+  }
+
+  #slides > img {
+    height: 300px;
+  }
+
+  #contents {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #tabMenu {
+    width: 100%;
+  }
+
+  #links {
+    width: 100%;
+    margin: 10px 0;
+  }
 }

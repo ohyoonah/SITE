@@ -174,15 +174,14 @@ button:focus {
 #contents {
   width: 100%;
   height: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
 }
 
 /*tabMenu*/
 #tabMenu {
   width: 50%;
-  height: 100%;
-  margin-top: 10px;
+  height: 400px;
 }
 
 #tabMenu input[type="radio"] {
@@ -191,7 +190,6 @@ button:focus {
 
 #tabMenu label {
   display: inline-block;
-  margin: 0 0;
   padding: 15px 25px;
   font-weight: 600;
   text-align: center;
@@ -212,7 +210,10 @@ button:focus {
 
 .tabContent {
   display: none;
-  padding: 20px 0 0;
+}
+
+.tabContent ul li:hover {
+  cursor: pointer;
 }
 
 .tabContent h2 {
@@ -220,17 +221,22 @@ button:focus {
 }
 
 #notice ul {
-  list-style: disc;
-  margin-left: 30px;
+  list-style: none;
 }
 
 #notice ul li {
   font-size: 16px;
   line-height: 2.5;
+  border: 1px solid #eee;
+  padding: 10px 20px;
 }
 
 #gallery ul li {
   display: inline; /*이미지 가로로 배치*/
+}
+
+#gallery img {
+  width: 32%;
 }
 
 #tab1:checked ~ #notice,
@@ -363,10 +369,26 @@ p {
 
   #tabMenu {
     width: 100%;
+    height: 580px;
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+
+  #tabMenu label {
+    display: flex;
+    justify-content: center;
+  }
+
+  #notice ul li{
+    font-size: 1.6rem;
   }
 
   #links {
     width: 100%;
-    margin: 10px 0;
+    margin-bottom: 50px;
+  }
+
+  #links ul li a p {
+    font-size: 20px;
   }
 }
